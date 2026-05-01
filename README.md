@@ -36,7 +36,10 @@ Additionally....need to add perry's stuff
 ---
 ## 3. Methodology
 
-### 3.1 Environment Setup
+### 3.1 Incident Response Framework (NIST SP 800-61)
+- This project follows the NIST SP 800-61 Computer Security Incident Handling Guide to structure the detection and analysis of Command-and-Control (C2) beaconing activity. This framework provides a systematic approach to identifying, analyzing, and responding to security incidents.
+  
+### 3.2 Environment Setup
 
 - Virtualized lab environment (VirtualBox)
 - Internal network range: `192.168.56.0/24`
@@ -73,16 +76,12 @@ python3 -m http.server 8080
 ### Tools Used
 
 - Wireshark (primary analysis tool)
----
 
-## 4. Incident Response Framework (NIST SP 800-61)
-- This project follows the NIST SP 800-61 Computer Security Incident Handling Guide to structure the detection and analysis of Command-and-Control (C2) beaconing activity. This framework provides a systematic approach to identifying, analyzing, and responding to security incidents.
-
-### 4.1 Preparation 
+### 3.3 Preparation 
 - A controlled lab environment was created using two virtual machines to simulate a real-world attack scenario. As you can see earlier we have two different Virtual Machines set up.
 - Wireshark was configured to live capture and monitor traffic between both machines. This setup allowed for safe testing and observation of malicious communication patterns.
 
-### 4.2 Dectection & Analysis (Primary Focus) 
+### 3.4 Dectection & Analysis (Primary Focus) 
 - This phase represents the core of the project, where Wireshark was used to analyze network traffic and detect C2 beaconing behavior.
 - Captured and inspected network traffic using Wireshark
 - Applied filters to isolate relevant communication:
@@ -91,36 +90,36 @@ python3 -m http.server 8080
   http.request && ip.src == 192.168.56.103
   ip.addr == 192.168.56.103 && tcp.poty == 8080
   ```
-### 4.3 Findings
+### 3.5 Findings
 - The victim machine generated periodic HTTP GET requests to attacker server
 - Communication occurred at consistent intervals (8-15 seconds)
 - Traffic consisted of low-volume, repetitive requests typical of beaconing behavior
-
----
-## 5. Results 
-- Present your findings using graphs, screenshots, logs, or tables.
-- Show evidence that supports your conclusions.
-- I/O Graph
-- Screenshots
-- GET/HTTP
----
-## 6. Conclusion:
-- Summarize key insights about IR, lessons learned, and/or
-- potential improvements
-### 6.1 Post Incident Activity
+  
+### 3.6 Post Incident Activity
 - Documented all findings and observed Indicators of Attack (IoAs)
 - Analyzed traffic patterns to understand attacker behavior
 - Recommended improved monitoring and detection strategies
 - Mature SOCs prioritize IoAs as they help prevent escalation, and then enrich with IoC
   
-### 6.2 Containment, Eradication, and Recovery
+### 3.7 Containment, Eradication, and Recovery
 Although this project was conducted in a simulated environment, the following actions would be recommended in a real-world scenario: 
 - Block communication to the attacker IP address 
 - Terminate suspicious processes on the victim machine
 - Remove malicious scripts ('beacon.py')
 - Patch vulnerabilities and secure the system
 ---
-## 7. Acknowledgement/Resources 
+## 4. Results 
+- Present your findings using graphs, screenshots, logs, or tables.
+- Show evidence that supports your conclusions.
+- I/O Graph
+- Screenshots
+- GET/HTTP
+---
+## 5. Conclusion:
+- Summarize key insights about IR, lessons learned, and/or
+- potential improvements
+---
+## 6. Acknowledgement/Resources 
 Lima, V. (2026). *BFOR 643 Incident Handling Module 1 – IR frameworks*. Massry School of Business, University at Albany.
 
 Lima, V. (2026). *BFOR 643 Incident Handling Module 3 – Metrics and practice*. Massry School of Business, University at Albany.
