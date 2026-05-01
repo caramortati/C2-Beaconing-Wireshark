@@ -2,7 +2,7 @@ import requests
 import time
 import random
 
-server = "http://192.168.56.101:8080"
+server = "http://192.168.56.101:8080"  # change for your server 
 
 while True:
   try:
