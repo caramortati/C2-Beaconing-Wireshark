@@ -95,6 +95,7 @@ https://github.com/user-attachments/assets/3e7540a4-8c8e-4c66-a735-8ef008e87def
 - Captured and inspected network traffic using Wireshark
 - Applied filters to isolate relevant communication:
 - ```bash
+  tcp.port == 8080
   http && tcp.port == 8080
   http.request && ip.src == 192.168.56.103
   ip.addr == 192.168.56.103 && tcp.port == 8080
@@ -103,6 +104,11 @@ https://github.com/user-attachments/assets/3e7540a4-8c8e-4c66-a735-8ef008e87def
 The filter `tcp.port == 8080` was used to isolate traffic between the victim and the simulated C2 server. By restricting analysis to this port, background noise is removed, allowing for focused observation of HTTP requests, TCP sessions, and repeated communication patterns indicative of beaconing behavior.
 
 https://github.com/user-attachments/assets/8c96f19e-6bd9-49aa-a120-3a3b27adec1d
+
+### 🎥 http && tcp.port == 8080 
+Narrow to http traffic. This narrows the view to HTTP traffic over the C2 port. 
+
+https://github.com/user-attachments/assets/fc371acb-01e7-4cd0-90e9-3c761de55278
 
 
 ### 3.5 Findings
