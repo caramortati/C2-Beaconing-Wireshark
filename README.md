@@ -89,7 +89,7 @@ python3 -m http.server 8080
 - ```bash
   http && tcp.port == 8080
   http.request && ip.src == 192.168.56.103
-  ip.addr == 192.168.56.103 && tcp.poty == 8080
+  ip.addr == 192.168.56.103 && tcp.port == 8080
   ```
 ### 3.5 Findings
 - The victim machine generated periodic HTTP GET requests to attacker server
@@ -114,7 +114,7 @@ Although this project was conducted in a simulated environment, the following ac
 - Show evidence that supports your conclusions.
 - I/O Graph
 - Screenshots
-- GET/HTTP
+- Tho I/O graph below filtered on 'ip.addr == 192.168.56.103 && tcp.port == 8080' depicts evenly spaced spikes in traffic, which indicates periodic beaconing behavior. This is a strong behavioral indicator of command-and-control communication
   
 ![Wireshark IO Graph](images/results/IO.png)
 
