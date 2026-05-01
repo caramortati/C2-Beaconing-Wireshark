@@ -32,6 +32,7 @@ In this C2 beaconing simulation, Wireshark provided detailed visibility into net
 
 Additionally, 
 
+---
 ## 3. Methodology
 -Yoelbis/Cara
 
@@ -72,6 +73,7 @@ python3 -m http.server 8080
 ### Tools Used
 
 - Wireshark (primary analysis tool)
+---
 
 ## 4. Incident Response Framework (NIST SP 800-61)
 - This project follows the NIST SP 800-61 Computer Security Incident Handling Guide to structure the detection and analysis of Command-and-Control (C2) beaconing activity. This framework provides a systematic approach to identifying, analyzing, and responding to security incidents.
@@ -88,7 +90,12 @@ python3 -m http.server 8080
   http.request && ip.src == 192.168.56.103
   ip.addr == 192.168.56.103 && tcp.poty == 8080
   ```
+### 4.3 Findings
+- The victim machine generated periodic HTTP GET requests to attacker server
+- Communication occurred at consistent intervals (8-15 seconds)
+- Traffic consisted of low-volume, repetitive requests typical of beaconing behavior
 
+---
 ## 5. Results 
 
 - Present your findings using graphs, screenshots, logs, or tables.
@@ -97,7 +104,7 @@ python3 -m http.server 8080
 - Screenshots
 - GET/HTTP
 
-
+---
 ## 6. Conclusion:
 - Summarize key insights about IR, lessons learned, and/or
 - potential improvements
@@ -105,7 +112,7 @@ python3 -m http.server 8080
 - Documented all findings and observed Indicators of Attack (IoAs)
 - Analyzed traffic patterns to understand attacker behavior
 - Recommended improved monitoring and detection strategies
-- Mature SOCs prioritize IoAs AS  prevent escalation, and then enrich with IoC
+- Mature SOCs prioritize IoAs as they help prevent escalation, and then enrich with IoC
   
 ### 6.2 Containment, Eradication, and Recovery
 Although this project was conducted in a simulated environment, the following actions would be recommended in a real-world scenario: 
