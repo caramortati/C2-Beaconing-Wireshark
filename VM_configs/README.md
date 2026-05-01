@@ -16,11 +16,11 @@ This lab environment was built to simulate a realistic attacker–victim network
 
 ### 2. VirtualBox (Hypervisor)
 - Source: Oracle VM VirtualBox  
-- Download: https://www.virtualbox.org/wiki/Linux_Downloads  
+- Download: https://www.virtualbox.org/wiki/Downloads
 
 ### 3. Ubuntu (Victim VM)
 - Source: Ubuntu  
-- Download: Ubuntou for Desktop
+- Download: Ubuntu for Desktop | https://www.virtualbox.org/wiki/Linux_Downloads
 
 The virtual machines were installed using ISO images (Ubuntu and Kali Linux), which were mounted during setup and are not stored within the VM after installation.
 
