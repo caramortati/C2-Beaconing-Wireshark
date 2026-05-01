@@ -106,7 +106,7 @@ The filter `tcp.port == 8080` was used to isolate traffic between the victim and
 https://github.com/user-attachments/assets/8c96f19e-6bd9-49aa-a120-3a3b27adec1d
 
 ### 🎥 http && tcp.port == 8080 
-Narrow to http traffic. This narrows the view to HTTP traffic over the C2 port. 
+The filter `http && tcp.port == 8080` was used to isolate HTTP traffic over the C2 communication port. This allowed for focused analysis of HTTP requests and responses, making it easier to identify repeated communication patterns indicative of beaconing behavior. 
 
 https://github.com/user-attachments/assets/fc371acb-01e7-4cd0-90e9-3c761de55278
 
