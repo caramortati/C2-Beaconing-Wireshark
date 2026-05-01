@@ -65,13 +65,9 @@ Guide for Installation: https://www.kali.org/docs/virtualization/install-virtual
 
 ## 🌐 Network Configuration (Critical)
 
-To simulate attacker–victim communication:
+A host-only adapter network was used to allow communication between virtual machines within a controlled environment. This setup enabled the victim and simulated C2 server to communicate while remaining isolated from external networks.
 
-### Option 1 (Recommended for Isolation)
-- Adapter Type: **Internal Network**  
-- Network Name: `lab-net`  
-
-### Option 2 (Alternative)
+In VirtualBox: 
 - Adapter Type: **Host-Only Adapter**  
 
 ### Apply to BOTH VMs:
@@ -86,6 +82,7 @@ After setup:
 
 ### On Ubuntu (Victim):
 ```bash
-ip a
+ip a # identify IP address
+ping # confirm connection
 ```
 <img width="1283" height="801" alt="Screenshot 2026-04-26 212208" src="https://github.com/user-attachments/assets/491ffdaa-4384-4fca-9929-fbc2c6d980ca" />
