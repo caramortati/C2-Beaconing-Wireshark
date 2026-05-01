@@ -121,6 +121,25 @@ Although this project was conducted in a simulated environment, the following ac
 ---
 ## 7. Acknowledgement/Resources 
 
+National Institute of Standards and Technology. (2012). Computer security incident handling guide (SP 800-61 Rev. 2). U.S. Department of Commerce. https://doi.org/10.6028/NIST.SP.800-61r2
+
+Palo Alto Networks Unit 42. (n.d.). *Customizing Wireshark: Changing column display*.  
+https://unit42.paloaltonetworks.com/unit42-customizing-wireshark-changing-column-display/
+
+Palo Alto Networks Unit 42. (n.d.). *Using Wireshark: Display filter expressions*.  
+https://unit42.paloaltonetworks.com/using-wireshark-display-filter-expressions/
+
+Palo Alto Networks Unit 42. (n.d.). *Using Wireshark: Identifying hosts and users*.  
+https://unit42.paloaltonetworks.com/using-wireshark-identifying-hosts-and-users/
+
+Wireshark Foundation. (n.d.). *Building display filter expressions*.  
+https://www.wireshark.org/docs/wsug_html_chunked/ChWorkBuildDisplayFilterSection.html
+
+Wireshark Foundation. (n.d.). Wireshark user guide. https://www.wireshark.org/docs/wsug_html_chunked/​
+
+​
+
+
 
 
 
