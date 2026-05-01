@@ -76,7 +76,6 @@ python3 -m http.server 8080
 ## 6. Conclusion:
 - Summarize key insights about IR, lessons learned, and/or
 - potential improvements
-  
 ### 6.1 Post Incident Activity
 - Documented all findings and observed Indicators of Compromise (IoCs)
 - Analyzed traffic patterns to understand attacker behavior
