@@ -119,6 +119,9 @@ Although this project was conducted in a simulated environment, the following ac
 - Patch vulnerabilities and secure the system
 ---
 ## 7. Acknowledgement/Resources 
+Lima, V. (2026). *BFOR 643 Incident Handling Module 1 – IR frameworks*. Massry School of Business, University at Albany.
+
+Lima, V. (2026). *BFOR 643 Incident Handling Module 3 – Metrics and practice*. Massry School of Business, University at Albany.
 
 National Institute of Standards and Technology. (2012). Computer security incident handling guide (SP 800-61 Rev. 2). U.S. Department of Commerce. https://doi.org/10.6028/NIST.SP.800-61r2
 
