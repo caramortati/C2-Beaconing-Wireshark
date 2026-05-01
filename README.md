@@ -10,12 +10,13 @@ A controlled environment was created where a host repeatedly communicated with a
 ---
 
 ## 2. Project Relevance
-
+_ Perry
 
 
 ## 3. Methodology
+-Yoelbis/Cara
 
-### Environment Setup
+### 3.1 Environment Setup
 
 - Virtualized lab environment (VirtualBox)
 - Internal network range: `192.168.56.0/24`
@@ -47,6 +48,22 @@ python3 -m http.server 8080
 
 - Wireshark (primary analysis tool)
 
+## 4. Incident Response Framework (NIST SP 800-61)
+- This project follows the NIST SP 800-61 Computer Security Incident Handling Guide to structure the detection and analysis of Command-and-Control (C2) beaconing activity. This framework provides a systematic approach to identifying, analyzing, and responding to security incidents.
+
+### 4.1 Preparation 
+- A controlled lab environment was created using two virtual machines to simulate a real-world attack scenario. As you can see earlier we have two different Virtual Machines set up.
+- Wireshark was configured to capture and monitor traffic between both machines. This setup allowed for safe testing and observation of malicious communication patterns.
+
+### 4.2 Dectection & Analysis (Primary Focus) 
+- This phrase represent the core of the project, where Wireshark was used to analyze network traffic and detect C2 beaconing behavior.
+- Captured and inspected network traffic using Wireshark
+- Applied filters to isolate relevant communication:
+- ```bash
+  http && tcp.port == 8080
+  http.request && ip.src == 192.168.56.103
+  ip.addr == 192.168.56.103 && tcp.poty == 8080
+  ```
 
 ## 4. Results 
 
