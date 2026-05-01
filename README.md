@@ -9,9 +9,12 @@ A controlled environment was created where a host repeatedly communicated with a
 
 ---
 
-## 2. Project Relevance
-_ Perry
+## 2. Project Relevance 
+Wireshark is relevant to this project because it provides a close look at the network activity involved in the simulated command and control behavior. The packet level view makes it possible to see how the traffic moves between systems and how the communication pattern forms during the scenario.
 
+The tool helps bring out details that point toward beaconing or other repeated activity. It shows the timing of the connections, the way the sessions form, and the protocol behavior that appears when a host reaches out to an external system on a steady schedule. These patterns help separate normal traffic from behavior that suggests a controlled or automated exchange.
+
+Its relevance also comes from how the captured packets can be reviewed after the activity takes place. Breaking down the traffic helps outline the flow of the communication and supports the process of identifying indicators that match what is expected in a C2 style exchange. This makes it easier to connect the network behavior to the goals of the project and understand how the simulated activity fits into detection and analysis work
 
 ## 3. Methodology
 -Yoelbis/Cara
