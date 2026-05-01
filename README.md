@@ -1,4 +1,3 @@
-# C2-Beaconing-Wireshark
 # Detecting Command-and-Control (C2) Beaconing Using Wireshark
 
 ## 1. Project Overview
