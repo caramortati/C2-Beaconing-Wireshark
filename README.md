@@ -9,11 +9,28 @@ A controlled environment was created where a host repeatedly communicated with a
 ---
 
 ## 2. Project Relevance 
-Wireshark is relevant to this project because it provides a close look at the network activity involved in the simulated command and control behavior. The packet level view makes it possible to see how the traffic moves between systems and how the communication pattern forms during the scenario.
+Wireshark is a widely used open source network protocol analyzer that plays a critical role in the Detection and Analysis phases of the Incident Response (IR) lifecycle. Wireshark plays a critical role in modern incident response, where the priority is no longer just about identifying malware, but also about understanding attacker behavior. 
 
-The tool helps bring out details that point toward beaconing or other repeated activity. It shows the timing of the connections, the way the sessions form, and the protocol behavior that appears when a host reaches out to an external system on a steady schedule. These patterns help separate normal traffic from behavior that suggests a controlled or automated exchange.
+#### Why Wireshark is Important in IR: 
+- Provides deep packet-level visibility into network communications  
+- Enables analysts to validate suspicious activity  
+- Helps identify command-and-control behavior, data exfiltration, and anomalies  
+- Supports rapid triage during security incidents
+  - MTTI (mean time to identify): time between the start of SOC triage and the moment an incident handler confirms that the events and alert(s) constitute an incident
 
-Its relevance also comes from how the captured packets can be reviewed after the activity takes place. Breaking down the traffic helps outline the flow of the communication and supports the process of identifying indicators that match what is expected in a C2 style exchange. This makes it easier to connect the network behavior to the goals of the project and understand how the simulated activity fits into detection and analysis work
+#### When/How Wireshark is Used: 
+- Validation after receving initial alerts 
+- During network traffic investigations 
+- To support timeline reconstruction 
+
+#### Skills Learned: 
+- Packet analysis and filtering 
+- Identifying behavioral indicators of compromise 
+- Mapping technical findings to real-world attacker techniques (MITRE ATT&CK)
+
+In this C2 beaconing simulation, Wireshark provided detailed visibility into network activity by allowing us to analyze packet-level communication between systems. It enabled us to observe connection timing, session behavior, and repeated HTTP requests, helping distinguish normal traffic from patterns indicative of automated or controlled communication.
+
+Additionally, 
 
 ## 3. Methodology
 -Yoelbis/Cara
@@ -85,16 +102,17 @@ python3 -m http.server 8080
 - Summarize key insights about IR, lessons learned, and/or
 - potential improvements
 ### 6.1 Post Incident Activity
-- Documented all findings and observed Indicators of Compromise (IoCs)
+- Documented all findings and observed Indicators of Attack (IoAs)
 - Analyzed traffic patterns to understand attacker behavior
 - Recommended improved monitoring and detection strategies
+- Mature SOCs prioritize IoAs AS  prevent escalation, and then enrich with IoC
   
 ### 6.2 Containment, Eradication, and Recovery
 Although this project was conducted in a simulated environment, the following actions would be recommended in a real-world scenario: 
-- block communication to the attacker IP address 
-- terminate suspicious processes on the victim machine
-- remove malicious scripts ('beacon.py')
-- patch vulnerabilities and secure the system 
+- Block communication to the attacker IP address 
+- Terminate suspicious processes on the victim machine
+- Remove malicious scripts ('beacon.py')
+- Patch vulnerabilities and secure the system 
 
 
 
