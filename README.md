@@ -134,12 +134,16 @@ Incident Responders use tools like Wireshark to:
 - Monitor for repeated communication patterns
   
 ### Comparison to Malware PCAP Behavior 
-There are several publically availiable malware pcap datasets that are used for simulated environments to learn about malware detection and attacker behavior. 
+There are several publicly available malware PCAP datasets used in simulated environments to study malware detection and attacker behavior. This project’s simulated environment can be compared to real-world malware PCAPs to support training and analysis.
 
-This simulated environment can be compared against other real malware PCAPs to aid in training. Both the lab simulation and publically availiable malware PCAPs for C2 beaconing traffic aim to show: 
-- Reptitive and predictable behavior
-- Common protocols used to blend in with normal traffic
-- Persistent communication with a remote server 
+Both this lab simulation and publicly available malware PCAPs that exhibit command-and-control (C2) beaconing share several key characteristics:
+
+- Repetitive and predictable communication patterns
+- Use of common protocols (e.g., HTTP) to blend in with normal traffic
+- Persistent communication with a remote server over time
+  
+While this project uses a controlled and benign setup, the observed network behavior closely mirrors patterns found in real malware traffic. This comparison reinforces how Wireshark can be used to identify behavior-based indicators and analyze potential threats in a real incident response scenario 
+
 ---
 ## 6. Acknowledgement/Resources 
 Lima, V. (2026). *BFOR 643 Incident Handling Module 1 – IR frameworks*. Massry School of Business, University at Albany.
