@@ -30,11 +30,10 @@ Wireshark is a widely used open source network protocol analyzer that plays a cr
 
 In this C2 beaconing simulation, Wireshark provided detailed visibility into network activity by allowing us to analyze packet-level communication between systems. It enabled us to observe connection timing, session behavior, and repeated HTTP requests, helping distinguish normal traffic from patterns indicative of automated or controlled communication.
 
-Additionally, 
+Additionally....need to add perry's stuff 
 
 ---
 ## 3. Methodology
--Yoelbis/Cara
 
 ### 3.1 Environment Setup
 
