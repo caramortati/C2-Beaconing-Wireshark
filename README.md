@@ -65,13 +65,13 @@ python3 -m http.server 8080
   ip.addr == 192.168.56.103 && tcp.poty == 8080
   ```
 
-## 4. Results 
+## 5. Results 
 
 - Present your findings using graphs, screenshots, logs, or tables.
 - Show evidence that supports your conclusions.
 
 
-## 5. Conclusion:
+## 6. Conclusion:
 
 - Summarize key insights about IR, lessons learned, and/or
 - potential improvements
