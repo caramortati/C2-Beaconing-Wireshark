@@ -11,25 +11,7 @@ A controlled environment was created where a host repeatedly communicated with a
 
 ## 2. Project Relevance
 
-Wireshark is a widely used network protocol analyzer that plays a critical role in the **Detection and Analysis phases** of the Incident Response (IR) lifecycle.
 
-### Why Wireshark is Important in IR:
-- Provides **deep packet-level visibility** into network communications  
-- Enables analysts to **validate suspicious activity**  
-- Helps identify **command-and-control behavior, data exfiltration, and anomalies**  
-- Supports **rapid triage during security incidents**
-
-### When It Is Used:
-- During **initial alert validation**
-- During **network traffic investigations**
-- To support **incident scoping and timeline reconstruction**
-
-### Skills Gained:
-- Packet analysis and filtering
-- Identifying behavioral indicators of compromise
-- Mapping technical findings to real-world attacker techniques (MITRE ATT&CK)
-
----
 
 ## 3. Methodology
 
