@@ -99,6 +99,12 @@ https://github.com/user-attachments/assets/3e7540a4-8c8e-4c66-a735-8ef008e87def
   http.request && ip.src == 192.168.56.103
   ip.addr == 192.168.56.103 && tcp.port == 8080
   ```
+### 🎥 tcp.port == 8080 
+The filter `tcp.port == 8080` was used to isolate traffic between the victim and the simulated C2 server. By restricting analysis to this port, background noise is removed, allowing for focused observation of HTTP requests, TCP sessions, and repeated communication patterns indicative of beaconing behavior.
+
+https://github.com/user-attachments/assets/8c96f19e-6bd9-49aa-a120-3a3b27adec1d
+
+
 ### 3.5 Findings
 - The victim machine generated periodic HTTP GET requests to attacker server
 - Communication occurred at consistent intervals (8-15 seconds)
