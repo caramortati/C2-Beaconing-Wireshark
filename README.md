@@ -137,6 +137,9 @@ https://www.wireshark.org/docs/wsug_html_chunked/ChWorkBuildDisplayFilterSection
 
 Wireshark Foundation. (n.d.). Wireshark user guide. https://www.wireshark.org/docs/wsug_html_chunked/​
 
+###  AI Assistance Disclosure
+This project was supported by AI-assisted tools for formatting and explanation. All technical analysis and conclusions were independently validated.
+
 ​
 
 
