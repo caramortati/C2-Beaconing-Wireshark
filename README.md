@@ -17,6 +17,7 @@ Wireshark is a widely used open source network protocol analyzer that plays a cr
 - Helps identify command-and-control behavior, data exfiltration, and anomalies  
 - Supports rapid triage during security incidents
   - MTTI (mean time to identify): time between the start of SOC triage and the moment an incident handler confirms that the events and alert(s) constitute an incident
+- Analyzing network traffic for indicators of attack (i.e., beaconing) 
 
 #### When/How Wireshark is Used: 
 - Validation after receving initial alerts 
