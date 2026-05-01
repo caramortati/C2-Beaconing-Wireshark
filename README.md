@@ -116,7 +116,7 @@ Although this project was conducted in a simulated environment, the following ac
 - Screenshots
 - GET/HTTP
   
-![IO Graph](imagess/results/IO.png)
+![Wireshark IO Graph](images/results/IO.png)
 
 ---
 ## 5. Conclusion:
