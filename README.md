@@ -114,7 +114,8 @@ Although this project was conducted in a simulated environment, the following ac
 - Show evidence that supports your conclusions.
 - I/O Graph
 - Screenshots
-- Tho I/O graph below filtered on 'ip.addr == 192.168.56.103 && tcp.port == 8080' depicts evenly spaced spikes in traffic, which indicates periodic beaconing behavior. This is a strong behavioral indicator of command-and-control communication
+- Tho I/O graph below depicts evenly spaced spikes in traffic, which indicates periodic beaconing behavior. This is a strong behavioral indicator of command-and-control communication
+  - filter applied: `ip.addr == 192.168.56.103 && tcp.port == 8080` 
   
 ![Wireshark IO Graph](images/results/IO.png)
 
