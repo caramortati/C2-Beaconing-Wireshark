@@ -115,6 +115,9 @@ Although this project was conducted in a simulated environment, the following ac
 - I/O Graph
 - Screenshots
 - GET/HTTP
+  
+![IO Graph](imagess/results/IO.png)
+
 ---
 ## 5. Conclusion:
 - Summarize key insights about IR, lessons learned, and/or potential improvements
