@@ -37,16 +37,34 @@ Wireshark is a widely used network protocol analyzer that plays a critical role 
 
 - Virtualized lab environment (VirtualBox)
 - Internal network range: `192.168.56.0/24`
-- Victim Machine: `192.168.56.103`
-- Attacker (C2 Simulation): `192.168.56.101`
+  
+## Victim Machine (Ubuntu): Simulated Compromised Host 
+- IP Address:`192.168.56.103`
+- Confirm that victim can reach attacker machine via ping, this verifies network is working before traffic generation
+```bash
+ping 192.168.56.101
+```
+- Script:
+```bash
+nano beacon.py
+```
+- Execute Script:
+```bash
+python3 beacon.py
+```
+- Behavior: sends an HTTP GET request from the victim to the attacker server, then sleeps for a randomized interval between 8 and 15 second
 
-### Tools Used
-
-- Wireshark (primary analysis tool)
+## Attacker Machine (Kali): 
+- Ip Address: `192.168.56.101`
 - Python HTTP server (C2 simulation)
 ```bash
 python3 -m http.server 8080
 ```
+- Behavior: attacke machine is now acting as a lightweight command-and-control server listening on TCP port 8080
+### Tools Used
+
+- Wireshark (primary analysis tool)
+
 
 ## 4. Results 
 
