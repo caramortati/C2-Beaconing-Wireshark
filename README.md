@@ -34,7 +34,7 @@ ping 192.168.56.101
 nano beacon.py
 ```
  
-See script: [`scripts/beacon.py`](scripts/beacon.py)
+See script: 
 
 This script simulates periodic HTTP requests to mimic command-and-control (C2) beaconing behavior.
 ```
