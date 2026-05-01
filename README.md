@@ -56,7 +56,7 @@ python3 -m http.server 8080
 - Wireshark was configured to capture and monitor traffic between both machines. This setup allowed for safe testing and observation of malicious communication patterns.
 
 ### 4.2 Dectection & Analysis (Primary Focus) 
-- This phrase represent the core of the project, where Wireshark was used to analyze network traffic and detect C2 beaconing behavior.
+- This phase represents the core of the project, where Wireshark was used to analyze network traffic and detect C2 beaconing behavior.
 - Captured and inspected network traffic using Wireshark
 - Applied filters to isolate relevant communication:
 - ```bash
@@ -69,12 +69,26 @@ python3 -m http.server 8080
 
 - Present your findings using graphs, screenshots, logs, or tables.
 - Show evidence that supports your conclusions.
+- I/O Graph
+- Screenshots
+- GET/HTTP
 
 
 ## 6. Conclusion:
-
 - Summarize key insights about IR, lessons learned, and/or
 - potential improvements
+  
+### 6.1 Post Incident Activity
+- Documented all findings and observed Indicators of Compromise (IoCs)
+- Analyzed traffic patterns to understand attacker behavior
+- Recommended improved monitoring and detection strategies
+  
+### 6.2 Containment, Eradication, and Recovery
+Although this project was conducted in a simulated environment, the following actions would be recommended in a real-world scenario: 
+- block communication to the attacker IP address 
+- terminate suspicious processes on the victim machine
+- remove malicious scripts ('beacon.py')
+- patch vulnerabilities and secure the system 
 
 
 
