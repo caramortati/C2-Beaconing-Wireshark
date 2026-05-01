@@ -21,7 +21,7 @@ _ Perry
 - Virtualized lab environment (VirtualBox)
 - Internal network range: `192.168.56.0/24`
   
-## Victim Machine (Ubuntu): Simulated Compromised Host 
+### Victim Machine (Ubuntu): Simulated Compromised Host 
 - IP Address:`192.168.56.103`
 - Confirm that victim can reach attacker machine via ping, this verifies network is working before traffic generation
 ```bash
@@ -37,7 +37,7 @@ python3 beacon.py
 ```
 - Behavior: sends an HTTP GET request from the victim to the attacker server, then sleeps for a randomized interval between 8 and 15 second
 
-## Attacker Machine (Kali): 
+### Attacker Machine (Kali): 
 - Ip Address: `192.168.56.101`
 - Python HTTP server (C2 simulation)
 ```bash
