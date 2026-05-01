@@ -97,13 +97,11 @@ python3 -m http.server 8080
 
 ---
 ## 5. Results 
-
 - Present your findings using graphs, screenshots, logs, or tables.
 - Show evidence that supports your conclusions.
 - I/O Graph
 - Screenshots
 - GET/HTTP
-
 ---
 ## 6. Conclusion:
 - Summarize key insights about IR, lessons learned, and/or
@@ -119,7 +117,9 @@ Although this project was conducted in a simulated environment, the following ac
 - Block communication to the attacker IP address 
 - Terminate suspicious processes on the victim machine
 - Remove malicious scripts ('beacon.py')
-- Patch vulnerabilities and secure the system 
+- Patch vulnerabilities and secure the system
+---
+## 7. Acknowledgement/Resources 
 
 
 
