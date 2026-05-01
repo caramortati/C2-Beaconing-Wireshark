@@ -110,6 +110,10 @@ The filter `http && tcp.port == 8080` was used to isolate HTTP traffic over the 
 
 https://github.com/user-attachments/assets/fc371acb-01e7-4cd0-90e9-3c761de55278
 
+### 🎥 http.user_agent contains "python" 
+The filter `http.user_agent contains "python` was used to show the user-agent shows python-requests, which confirms this traffic is script-generated rather than normal human web browsing. 
+
+https://github.com/user-attachments/assets/7036272c-5e5c-46f3-8f05-6dee42817d32
 
 ### 3.5 Findings
 - The victim machine generated periodic HTTP GET requests to attacker server
