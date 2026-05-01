@@ -75,7 +75,7 @@ python3 -m http.server 8080
 ```
 - Behavior: attack machine is now acting as a lightweight command-and-control server listening on TCP port 8080
 
-## 🎥 Live Demonstration
+### 🎥 Setup Demo
 
 This video demonstrates the virtual lab setup used to simulate C2 beaconing between the victim machine and the C2 server.
 
