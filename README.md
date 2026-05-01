@@ -118,6 +118,23 @@ Although this project was conducted in a simulated environment, the following ac
 ## 5. Conclusion:
 - Summarize key insights about IR, lessons learned, and/or
 - potential improvements
+This project demonstrated how network traffic analysis can be used in IR to detect Command-and-Control (C2) beaconing behavior using Wireshark. By simulating a compromised systen in a controlled lab environment, it was possible to observe how the compromised victim machine communicates with an attacker controlled server through periodic HTTP requests.
+
+### Real-World Application
+In real-world environments, attackers commonly use C2 beaconing to maintain persistence with compromised systems. This type of communication is often designed to be stealthy, using low traffic volume and regular intervals to evade detection. The techniques used in this project such as analyzing live packet captures, applying filters and gradually adding in filter conditions, allowed us to key into traffic patterns using Wireshark. This is directly applicable to IR teams in the analysis and detection phase of the IR lifecycle in indentifying indicators of attack. 
+
+Incident Responders use tools like Wireshark to: 
+- Detect suspicious outbound connections
+- Identify unusal DNS or HTTP activity
+- Monitor for repeated communication patterns
+  
+### Comparison to Malware PCAP Behavior 
+There are several publically availiable malware pcap datasets that are used for simulated environments to learn about malware detection and attacker behavior. 
+
+This simulated environment can be compared against other real malware PCAPs to aid in training. Both the lab simulation and publically availiable malware PCAPs for C2 beaconing traffic aim to show: 
+- Reptitive and predictable behavior
+- Common protocols used to blend in with normal traffic
+- Persistent communication with a remote server 
 ---
 ## 6. Acknowledgement/Resources 
 Lima, V. (2026). *BFOR 643 Incident Handling Module 1 – IR frameworks*. Massry School of Business, University at Albany.
