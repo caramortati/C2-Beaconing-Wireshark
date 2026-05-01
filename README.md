@@ -97,6 +97,7 @@ https://github.com/user-attachments/assets/3e7540a4-8c8e-4c66-a735-8ef008e87def
 - ```bash
   tcp.port == 8080
   http && tcp.port == 8080
+  http.user_agent contains "python" 
   http.request && ip.src == 192.168.56.103
   ip.addr == 192.168.56.103 && tcp.port == 8080
   ```
