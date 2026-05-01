@@ -24,7 +24,7 @@ Wireshark is a widely used open source network protocol analyzer that plays a cr
 - To support timeline reconstruction 
 
 #### Skills Learned: 
-- Packet analysis and filtering 
+- Packet analysis, filtering, custom profile configuration, exporting objects 
 - Identifying behavioral indicators of compromise 
 - Mapping technical findings to real-world attacker techniques (MITRE ATT&CK)
 
