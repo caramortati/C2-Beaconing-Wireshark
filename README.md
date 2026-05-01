@@ -74,6 +74,12 @@ python3 beacon.py
 python3 -m http.server 8080
 ```
 - Behavior: attack machine is now acting as a lightweight command-and-control server listening on TCP port 8080
+
+
+
+https://github.com/user-attachments/assets/3e7540a4-8c8e-4c66-a735-8ef008e87def
+
+
 ### Tools Used
 
 - Wireshark (primary analysis tool)
