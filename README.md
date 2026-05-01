@@ -40,6 +40,8 @@ Additionally....need to add perry's stuff
 - This project follows the NIST SP 800-61 Computer Security Incident Handling Guide to structure the detection and analysis of Command-and-Control (C2) beaconing activity. This framework provides a systematic approach to identifying, analyzing, and responding to security incidents.
   
 ### 3.2 Environment Setup
+See detailed environment configuration:  
+[VM Configuration](VM_configs/README.md)
 
 - Virtualized lab environment (VirtualBox)
 - Internal network range: `192.168.56.0/24`
