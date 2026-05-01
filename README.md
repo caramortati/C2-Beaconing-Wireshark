@@ -32,6 +32,7 @@ ping 192.168.56.101
 - 🔧Beaconing Simulation Script:
 ```bash
 nano beacon.py
+```
  
 See script: [`scripts/beacon.py`](scripts/beacon.py)
 
