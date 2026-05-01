@@ -79,8 +79,6 @@ python3 -m http.server 8080
 
 This video demonstrates the virtual lab setup used to simulate C2 beaconing between the victim machine and the C2 server.
 
-➡️ [Watch VM Setup Video](videos/VM%20Setup%201.mp4)
-
 https://github.com/user-attachments/assets/3e7540a4-8c8e-4c66-a735-8ef008e87def
 
 
