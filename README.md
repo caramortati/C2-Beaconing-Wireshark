@@ -20,6 +20,8 @@ _ Perry
 
 - Virtualized lab environment (VirtualBox)
 - Internal network range: `192.168.56.0/24`
+
+<img width="501" height="321" alt="Environment" src="https://github.com/user-attachments/assets/78d40a27-fd21-462f-8f07-d2ce982b64d9" />
   
 ### Victim Machine (Ubuntu): Simulated Compromised Host 
 - IP Address:`192.168.56.103`
