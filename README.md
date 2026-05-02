@@ -252,6 +252,8 @@ MITRE ATT&CK. (n.d.). MITRE ATT&CK® framework. https://attack.mitre.org/
 
 National Institute of Standards and Technology. (2012). Computer security incident handling guide (SP 800-61 Rev. 2). U.S. Department of Commerce. https://doi.org/10.6028/NIST.SP.800-61r2
 
+OpenAI. (2026). ChatGPT (GPT-5.3) [Large language model]. https://chat.openai.com/
+
 Palo Alto Networks Unit 42. (n.d.). *Customizing Wireshark: Changing column display*.  
 https://unit42.paloaltonetworks.com/unit42-customizing-wireshark-changing-column-display/
 
@@ -266,8 +268,9 @@ https://www.wireshark.org/docs/wsug_html_chunked/ChWorkBuildDisplayFilterSection
 
 Wireshark Foundation. (n.d.). Wireshark user guide. https://www.wireshark.org/docs/wsug_html_chunked/​
 
-###  AI Assistance Disclosure
-This project was supported by AI-assisted tools for formatting, structure and explanation. All technical analysis and conclusions were independently validated.
+### AI Usage Disclosure Statement
+
+ChatGPT (OpenAI) was used to assist with wording, structure, and refinement of explanations. All technical analysis, methodology, and findings were independently validated.
 
 ​
 
