@@ -116,7 +116,7 @@ The filter `http.user_agent contains "python` was used to show the user-agent sh
 
 https://github.com/user-attachments/assets/7036272c-5e5c-46f3-8f05-6dee42817d32
 
-### 🎥 http.reponse
+### 🎥 http.response
 The filter `http.response` was used to isolate server responses to HTTP requests. Observing repeated `200 OK` responses confirmed that the C2 server is consistently responding to victim check ins. 
 
 https://github.com/user-attachments/assets/d0e3f659-fabe-4110-b638-75b3309b5766
