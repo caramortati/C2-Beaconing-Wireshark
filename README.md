@@ -202,7 +202,6 @@ This predictable timing pattern is a key Indicator of Attack (IoA), as periodic 
 
 ---
 ## 5. Conclusion:
-- Summarize key insights about IR, lessons learned, and/or potential improvements
 
 This project demonstrated how network traffic analysis can be used in IR to detect Command-and-Control (C2) beaconing behavior using Wireshark. By simulating a compromised systen in a controlled lab environment, it was possible to observe how the compromised victim machine communicates with an attacker controlled server through periodic HTTP requests.
 
