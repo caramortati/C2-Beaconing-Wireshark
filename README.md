@@ -219,17 +219,17 @@ The simulated beaconing uses HTTP over TCP port 8080 to create repeated communic
 
 This project demonstrated how network traffic analysis can be used in IR to detect Command-and-Control (C2) beaconing behavior using Wireshark. By simulating a compromised systen in a controlled lab environment, it was possible to observe how the compromised victim machine communicates with an attacker controlled server through periodic HTTP requests.
 
-### Real-World Application
-In real-world environments, attackers commonly use C2 beaconing to maintain persistence with compromised systems. This type of communication is often designed to be stealthy, using low traffic volume and regular intervals to evade detection. The techniques used in this project such as analyzing live packet captures, applying filters and gradually adding in filter conditions, allowed us to key into traffic patterns using Wireshark. The use of display filters, TCP stream analysis, and timing visualization, allows analysts to identify abnormal behaviors like (C2) beaconing. This is directly applicable to IR teams in the analysis and detection phase of the IR lifecycle in indentifying indicators of attack. 
-
-IoAs enable early detection and threat hunting through behavioral analysis, and Wireshark supports this by exposing network patterns, such as timing and protocol anomalies, that help identify attacker behavior, including zero-day threats
-
-Limitations must also be recognized when thinking about the whole picture. Wireshark does not provide endpoint visibility, and cannot determine the root cause of an infection. It is best used alongside tools such as EDR and SIEM platforms for full situational awareness. Therefore Wireshark is meant to be used as a critical component of a broader incident response strategy, where network-level insights inform containment, eradication, and recovery decisions.
-
 Incident Responders use tools like Wireshark to: 
 - Detect suspicious outbound connections
 - Identify unusal DNS or HTTP activity
 - Monitor for repeated communication patterns
+
+IoAs enable early detection and threat hunting through behavioral analysis, and Wireshark supports this by exposing network patterns, such as timing and protocol anomalies, that help identify attacker behavior, including zero-day threats.
+
+Limitations must also be recognized when thinking about the whole picture. Wireshark does not provide endpoint visibility, and cannot determine the root cause of an infection. It is best used alongside tools such as EDR and SIEM platforms for full situational awareness. Therefore Wireshark is meant to be used as a critical component of a broader incident response strategy, where network-level insights inform containment, eradication, and recovery decisions.
+
+### Real-World Application
+In real-world environments, attackers commonly use C2 beaconing to maintain persistence with compromised systems. This type of communication is often designed to be stealthy, using low traffic volume and regular intervals to evade detection. The techniques used in this project such as analyzing live packet captures, applying filters and gradually adding in filter conditions, allowed us to key into traffic patterns using Wireshark. The use of display filters, TCP stream analysis, and timing visualization, allows analysts to identify abnormal behaviors like (C2) beaconing. This is directly applicable to IR teams in the analysis and detection phase of the IR lifecycle in indentifying indicators of attack. 
   
 ### Comparison to Malware PCAP Behavior 
 There are several publicly available malware PCAP datasets used in simulated environments to study malware detection and attacker behavior. This project’s simulated environment can be compared to real-world malware PCAPs to support training and analysis.
@@ -265,7 +265,7 @@ https://www.wireshark.org/docs/wsug_html_chunked/ChWorkBuildDisplayFilterSection
 Wireshark Foundation. (n.d.). Wireshark user guide. https://www.wireshark.org/docs/wsug_html_chunked/​
 
 ###  AI Assistance Disclosure
-This project was supported by AI-assisted tools for formatting and explanation. All technical analysis and conclusions were independently validated.
+This project was supported by AI-assisted tools for formatting, structure and explanation. All technical analysis and conclusions were independently validated.
 
 ​
 
