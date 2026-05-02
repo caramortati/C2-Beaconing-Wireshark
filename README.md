@@ -82,9 +82,9 @@ This video demonstrates the virtual lab setup used to simulate C2 beaconing betw
 https://github.com/user-attachments/assets/3e7540a4-8c8e-4c66-a735-8ef008e87def
 
 
-### Tools Used
+### Tool Used
 
-- Wireshark (primary analysis tool)
+- Wireshark 
 
 ### 3.3 Preparation 
 - A controlled lab environment was created using two virtual machines to simulate a real-world attack scenario. As you can see earlier we have two different Virtual Machines set up.
