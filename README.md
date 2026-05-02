@@ -111,13 +111,19 @@ The filter `http && tcp.port == 8080` was used to isolate HTTP traffic over the 
 
 https://github.com/user-attachments/assets/fc371acb-01e7-4cd0-90e9-3c761de55278
 
+### 🎥 http.request && ip.src == 192.168.56.103
+The filer 'http.request && ip.src == 192.168.56.103' was used to show only requests initiated by the victim. This is important because beaconing is outbound communication from the compromised host to the C2 server. 
+
+
+
+
 ### 🎥 http.user_agent contains "python" 
 The filter `http.user_agent contains "python` was used to show the user-agent shows python-requests, which confirms this traffic is script-generated rather than normal human web browsing. 
 
 https://github.com/user-attachments/assets/7036272c-5e5c-46f3-8f05-6dee42817d32
 
 ### 🎥 http.response
-The filter `http.response` was used to isolate server responses to HTTP requests. Observing repeated `200 OK` responses confirmed that the C2 server is consistently responding to victim check ins. 
+We created the filter `http.response` and added it to filter display. This was used to isolate server responses to HTTP requests. Observing repeated `200 OK` responses confirmed that the C2 server is consistently responding to victim check ins. 
 
 https://github.com/user-attachments/assets/d0e3f659-fabe-4110-b638-75b3309b5766
 
