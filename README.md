@@ -100,7 +100,7 @@ https://github.com/user-attachments/assets/3e7540a4-8c8e-4c66-a735-8ef008e87def
   http.request && ip.src == 192.168.56.103
   http.user_agent contains "python" 
   http.response
-  ip.addr == 192.168.56.103 && tcp.port == 8080
+  ip.addr == 192.168.56.103 && tcp.port == 8080 #delta time column
   ```
 ### 🎥 tcp.port == 8080 
 The filter `tcp.port == 8080` was used to isolate traffic between the victim and the simulated C2 server. By restricting analysis to this port, background noise is removed, allowing for focused observation of HTTP requests, TCP sessions, and repeated communication patterns indicative of beaconing behavior.
@@ -128,6 +128,11 @@ https://github.com/user-attachments/assets/7036272c-5e5c-46f3-8f05-6dee42817d32
 We created the filter `http.response` and added it to filter display. This was used to isolate server responses to HTTP requests. Observing repeated `200 OK` responses confirmed that the C2 server is consistently responding to victim check ins. 
 
 https://github.com/user-attachments/assets/d0e3f659-fabe-4110-b638-75b3309b5766
+
+### 🎥 ip.addr == 192.168.56.103 && tcp.port == 8080 #delta time column
+The Delta Time column was used to measure the time between packets while filtering for `ip.addr == 192.168.56.103 && tcp.port == 8080`. The observed intervals of approximately 8–15 seconds confirm consistent, automated communication, aligning with the programmed beaconing behavior.
+
+https://github.com/user-attachments/assets/38e82f42-a5db-4d8e-9185-92889494ad5d
 
 ### 3.5 Findings
 - The victim machine generated periodic HTTP GET requests to attacker server
