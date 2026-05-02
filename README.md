@@ -222,9 +222,10 @@ This project demonstrated how network traffic analysis can be used in IR to dete
 Incident Responders use tools like Wireshark to: 
 - Detect suspicious outbound connections
 - Identify unusal DNS or HTTP activity
-- Monitor for repeated communication patterns
+- Monitor for repeated communication patterns, time analysis is critical 
 - Investigate Network Detection & Response (NDR / IDS / IPS) alerts
 - Identify IoAs that tell you what the attacker is doing (Suspicious process behavior, Command-and-Control patterns)
+- Identify behavioral patterns
 
 IoAs enable early detection and threat hunting through behavioral analysis, and Wireshark supports this by exposing network patterns, such as timing and protocol anomalies, that help identify attacker behavior, including zero-day threats.
 
