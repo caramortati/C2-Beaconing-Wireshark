@@ -12,7 +12,7 @@ A controlled environment was created where a host repeatedly communicated with a
 Wireshark is a widely used open source network protocol analyzer that plays a critical role in the Detection and Analysis phases of the Incident Response (IR) lifecycle. Wireshark plays a critical role in modern incident response, where the priority is no longer just about identifying malware, but also about understanding attacker behavior. 
 
 #### Why Wireshark is Important in IR: 
-- Provides deep packet-level visibility into network communications  
+- Provides packet-level visibility into network communications  
 - Enables analysts to validate suspicious activity  
 - Helps identify command-and-control behavior, data exfiltration, and anomalies  
 - Supports rapid triage during security incidents
