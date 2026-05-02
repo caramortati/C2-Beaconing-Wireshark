@@ -201,6 +201,18 @@ This predictable timing pattern is a key Indicator of Attack (IoA), as periodic 
 ![Delta Timing](images/results/delta.time.png)
 
 ---
+## 5. MITRE ATT&CK Mapping
+
+The observed behavior aligns with tactics and techniques in the MITRE ATT&CK framework, specifically within the Command and Control (C2) phase.
+
+### Tactic: Command and Control (TA0011)
+
+### Technique: Application Layer Protocol (T1071)
+
+- Sub-technique: Web Protocols (T1071.001)
+
+The simulated beaconing uses HTTP over TCP port 8080 to create repeated communication between the victim and C2 server, blending malicious traffic with normal web activity. Consistent HTTP GET requests and 200 OK responses indicate persistent communication typical of C2 behavior.
+
 ## 5. Conclusion:
 
 This project demonstrated how network traffic analysis can be used in IR to detect Command-and-Control (C2) beaconing behavior using Wireshark. By simulating a compromised systen in a controlled lab environment, it was possible to observe how the compromised victim machine communicates with an attacker controlled server through periodic HTTP requests.
