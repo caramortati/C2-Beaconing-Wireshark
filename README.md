@@ -160,16 +160,17 @@ Although this project was conducted in a simulated environment, the following ac
 
 
 The screenshot below highlights filtered Wireshark traffic between the victim host and simulated C2 server over port 8080. Repeated HTTP requests and consistent communication patterns indicate beaconing behavior.
-  - filter applied: `ip.addr == 192.168.56.103 && tcp.port == 8080` 
+  - filter applied: `ip.addr == 192.168.56.103 && tcp.port == 8080`
 
 ![Annotated Packet Analysis](images/results/ip.addr_tcp.port.8080.PNG)
 
 Tho I/O graph below depicts evenly spaced spikes in traffic, which indicates periodic beaconing behavior. This is a strong behavioral indicator of command-and-control communication
-  - filter applied: `ip.addr == 192.168.56.103 && tcp.port == 8080` 
+  - filter applied: `ip.addr == 192.168.56.103 && tcp.port == 8080`
+  - Statistics → IO Graph 
   
 ![Wireshark IO Graph](images/results/IO.png)
 
-Following the TCP stream in Wireshark was used to reconstruct the full request-response session between the victim machine and the (C2) server. This feature allows for a complete view of the communication at the application layer, rather than analyzing individual packets in isolation.
+Following the TCP stream in Wireshark was used to reconstruct the full request-response session between the victim machine and the (C2) server. This allows for a complete view of the communication at the application layer, rather than analyzing individual packets in isolation.
 
 The reconstructed stream revealed the following:
 
