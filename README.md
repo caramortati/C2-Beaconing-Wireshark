@@ -26,7 +26,7 @@ Wireshark is a widely used open source network protocol analyzer that plays a cr
 
 #### Skills Learned: 
 - Packet analysis, filtering, custom profile configuration, exporting objects 
-- Identifying behavioral indicators of compromise 
+- Identifying behavioral indicators of attack
 - Mapping technical findings to real-world attacker techniques (MITRE ATT&CK)
 
 In this C2 beaconing simulation, Wireshark provided detailed visibility into network activity by allowing us to analyze packet-level communication between systems. It enabled us to observe connection timing, session behavior, and repeated HTTP requests, helping distinguish normal traffic from patterns indicative of automated or controlled communication.
@@ -212,6 +212,8 @@ The observed behavior aligns with tactics and techniques in the MITRE ATT&CK fra
 - Sub-technique: Web Protocols (T1071.001)
 
 The simulated beaconing uses HTTP over TCP port 8080 to create repeated communication between the victim and C2 server, blending malicious traffic with normal web activity. Consistent HTTP GET requests and 200 OK responses indicate persistent communication typical of C2 behavior.
+
+![MITRE Mapping](images/results/mitre.png)
 
 ## 5. Conclusion:
 
