@@ -223,7 +223,7 @@ Incident Responders use tools like Wireshark to:
 - Detect suspicious outbound connections
 - Identify unusal DNS or HTTP activity
 - Monitor for repeated communication patterns, time analysis is critical 
-- Investigate Network Detection & Response (NDR / IDS / IPS) alerts
+- SOC -> Investigate Network Detection & Response (NDR / IDS / IPS) alerts
 - Identify IoAs that tell you what the attacker is doing (Suspicious process behavior, Command-and-Control patterns)
 - Identify behavioral patterns
 
