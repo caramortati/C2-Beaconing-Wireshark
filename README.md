@@ -112,7 +112,7 @@ The filter `http && tcp.port == 8080` was used to isolate HTTP traffic over the 
 https://github.com/user-attachments/assets/fc371acb-01e7-4cd0-90e9-3c761de55278
 
 ### 🎥 http.request && ip.src == 192.168.56.103 | Analyzing Traffic: Follow TCP Stream
-The filer 'http.request && ip.src == 192.168.56.103' was used to show only requests initiated by the victim. This is important because beaconing is outbound communication from the compromised host to the C2 server. 
+The filer `http.request && ip.src == 192.168.56.103` was used to show only requests initiated by the victim. This is important because beaconing is outbound communication from the compromised host to the C2 server. 
 
 Right clicking on one GET packet and the navigating to Follow -> TCP Stream reconstructs the full request-response session. This confirms the application-layer communication between victim and C2 server (attacker)
 
