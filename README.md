@@ -248,6 +248,8 @@ Lima, V. (2026). *BFOR 643 Incident Handling Module 1 – IR frameworks*. Massry
 
 Lima, V. (2026). *BFOR 643 Incident Handling Module 3 – Metrics and practice*. Massry School of Business, University at Albany.
 
+MITRE ATT&CK. (n.d.). MITRE ATT&CK® framework. https://attack.mitre.org/
+
 National Institute of Standards and Technology. (2012). Computer security incident handling guide (SP 800-61 Rev. 2). U.S. Department of Commerce. https://doi.org/10.6028/NIST.SP.800-61r2
 
 Palo Alto Networks Unit 42. (n.d.). *Customizing Wireshark: Changing column display*.  
